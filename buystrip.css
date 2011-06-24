@@ -1,0 +1,53 @@
+/* -- buy now strip -- */
+#buystrip { position: relative; width: 960px; margin: 18px auto; height: 13em; padding: 15px 0 0 20px; background: #fff url(http://images.apple.com/global/elements/buystripmodule/bg.gif) repeat-x 0 100%;
+	border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px;
+	box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+}
+
+#buystrip p { font-size: 11px; margin-left: 40px; width: 180px; }
+#buystrip h3 { font-size: 14px; margin: 0; }
+#buystrip h3 span { color: #666; display: block; font-size: 11px; }
+#buystrip h4 { color: #999; font-size: 12px; font-weight: normal; margin-bottom: 10px; }
+#buystrip h3, 
+#buystrip p { padding: 0; line-height: 17px; }
+#buystrip a.more { font-size: 11px; }
+#buystrip img { clear: right; }
+#buystrip img.flushleft { margin-left: -20px; margin-bottom: -7px; }
+
+#buystrip .column { border-left: none; border-right: 1px solid #e9e9e9; height: 65%; margin-left: 0px; width: 234px; padding-bottom: 10px; padding-left: 10px; padding-top: 5px; }
+#buystrip .column p { margin-bottom: 0; }
+#buystrip .column img { position: relative; left: 0; }
+#buystrip .column .icon { float: left; margin-right: 9px; }
+
+#buystrip .column.first { height: 140px; width: 225px; margin-top: -15px; padding-top: 20px; padding-left: 0; position: relative; }
+#buystrip .column.last { border: none; }
+
+#buystrip #links { width: 734px; margin: 0; position: absolute; right: 0; bottom: 0; border-top: 1px solid #e9e9e9; line-height: 27px; text-align: center; background: #f6f6f6 url(http://images.apple.com/global/elements/buystripmodule/bg-bottom.gif) repeat-x 0 0; }
+#buystrip #links { -webkit-border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px; }
+#buystrip #links a.more { margin-right: 40px; }
+
+#buystrip #comparison { border-top: 1px solid #e9e9e9; float: left; margin-top: 10px; margin-left: -10px; padding: 13px 0 0; width: 230px; }
+#buystrip #comparison .family { float: left; margin: -6px 10px 0 -10px; }
+#buystrip #comparison a { display: block; font-size: 13px; line-height: 14px; }
+#buystrip #comparison a:hover { text-decoration: none; cursor: pointer; }
+#buystrip #comparison a span { background: url(http://images.apple.com/global/elements/arrows/morearrow_333.gif) no-repeat 100% 70%; color: #252525; padding-right: 8px; position: relative; text-decoration: none; zoom: 1; }
+#buystrip #comparison a:hover span { background-image: url(http://images.apple.com/global/elements/arrows/morearrow_08c.gif); color: #08c; }
+
+/* -- mozilla 3.0 -- */
+@-moz-document domain(apple.com) {
+	#buystrip { border-top: 1px solid #e1e1e1; border-bottom: 2px solid #d4d4d4; border-left: 1px solid #d4d4d4; border-right: 1px solid #d4d4d4; }
+}
+
+/* -- mozilla 3.5+ -- */
+#buystrip:nth-child(1n) { border: none; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; }
+
+/* -- IE -- */
+#buystrip { *border-top: 1px solid #e1e1e1; *border-bottom: 2px solid #d4d4d4; *border-left: 1px solid #d4d4d4; *border-right: 1px solid #d4d4d4; *outline: 1px solid #e9e9e9; }
+#buystrip h3 { *word-spacing: -1px; }
+#buystrip #links { _position: relative; _float: right; _margin-top: 12px; }
+
+#buystrip img.flushleft { _left: 30px; }
+#buystrip #comparison a span { *background-position: 100% 90%; }
+
+#buystrip .column.first { _height: 100px; }
+#buystrip .column.last p { *width: 170px; }

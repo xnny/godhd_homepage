@@ -1,0 +1,213 @@
+.jDrawer
+{
+	font-family: "Lucida Grande", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.jDrawer a
+{
+	color: #5A9FC4;
+	text-decoration: none;
+}
+
+.jDrawer li.jDrawer-active a
+{
+	color: #005596;
+}
+
+.jDrawer a:hover
+{
+	color: #009DE3 !important;
+	text-decoration: underline;
+}
+
+
+.jDrawer-vertical
+{
+	width: 184px;
+}
+
+.jDrawer-horizontal
+{
+	height: 184px;
+}
+
+.jDrawer-vertical .jDrawer-title-l
+{
+	background: transparent url(../images/jDrawer-vertical-title-l.png) no-repeat scroll 0% 0%;
+	padding: 0pt 0pt 0pt 10px;
+}
+
+.jDrawer-vertical .jDrawer-title-r
+{
+	background: transparent url(../images/jDrawer-vertical-title-r.png) no-repeat scroll 100% 0%;
+	padding: 0pt 10px 0pt 0pt;
+}
+
+.jDrawer-vertical .jDrawer-title-bg
+{
+	color: #FFF;
+	height: 21px;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	padding: 2px 0pt;
+}
+
+.jDrawer ul.jDrawer-list
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+.jDrawer li.jDrawer-item
+{
+	display: block;
+	_overflow: hidden;
+	position: absolute;
+	top: 0pt;
+	left: 0pt;
+	z-index: 1;
+}
+
+.jDrawer-vertical li.jDrawer-item
+{
+	width: 100%;
+}
+
+.jDrawer-horizontal li.jDrawer-item
+{
+	height: 100%;
+}
+
+.jDrawer li.jDrawer-active
+{
+
+}
+
+.jDrawer-vertical .jDrawer-item-border-1
+{
+	background: transparent url(../images/jDrawer-vertical-item-l.gif) no-repeat scroll 0% 100%;
+	padding: 0px 0px 0px 10px;
+}
+
+.jDrawer-vertical li.jDrawer-active .jDrawer-item-border-1
+{
+	background: transparent url(../images/jDrawer-vertical-item-l-active.gif) no-repeat scroll 0% 100%;
+}
+
+.jDrawer-vertical .jDrawer-item-border-2
+{
+	background: transparent url(../images/jDrawer-vertical-item-r.gif) no-repeat scroll 100% 100%;
+	padding: 0px 10px 0px 0px;
+}
+
+.jDrawer-vertical li.jDrawer-active .jDrawer-item-border-2
+{
+	background: transparent url(../images/jDrawer-vertical-item-r-active.gif) no-repeat scroll 100% 100%;
+}
+
+.jDrawer-vertical .jDrawer-item-border-3
+{
+	background: transparent url(../images/jDrawer-vertical-item-b.gif) repeat-x scroll 0% 100%;
+	padding: 0px 0px 10px 0px;
+}
+
+.jDrawer-vertical li.jDrawer-active .jDrawer-item-border-3
+{
+	background: transparent url(../images/jDrawer-vertical-item-b-active.gif) repeat-x scroll 0% 100%;
+}
+
+.jDrawer-vertical .jDrawer-content
+{
+	color: #969696;
+	padding: 10px;
+	background: transparent url(../images/jDrawer-vertical-item-bg.gif) repeat-x scroll 0% 100%;
+}
+
+.jDrawer-vertical li.jDrawer-active .jDrawer-content
+{
+	color: #333;
+	background: transparent url(../images/jDrawer-vertical-item-bg-active.gif) repeat-x scroll 0% 100%;
+}
+
+.jDrawer-vertical .jDrawer-content h3
+{
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.jDrawer-horizontal .jDrawer-item-border-1
+{
+	background: transparent url(../images/jDrawer-horizontal-item-t.gif) no-repeat scroll 100% 0%;
+	padding: 10px 0px 0px 0px;
+}
+
+.jDrawer-horizontal li.jDrawer-active .jDrawer-item-border-1
+{
+	background: transparent url(../images/jDrawer-horizontal-item-t-active.gif) no-repeat scroll 100% 0%;
+}
+
+.jDrawer-horizontal .jDrawer-item-border-2
+{
+	background: transparent url(../images/jDrawer-horizontal-item-b.gif) no-repeat scroll 100% 100%;
+	padding: 0px 0px 10px 0px;
+}
+
+.jDrawer-horizontal li.jDrawer-active .jDrawer-item-border-2
+{
+	background: transparent url(../images/jDrawer-horizontal-item-b-active.gif) no-repeat scroll 100% 100%;
+}
+
+.jDrawer-horizontal .jDrawer-item-border-3
+{
+	background: transparent url(../images/jDrawer-horizontal-item-r.gif) repeat-y scroll 100% 0%;
+	padding: 0px 10px 0px 0px;
+}
+
+.jDrawer-horizontal li.jDrawer-active .jDrawer-item-border-3
+{
+	background: transparent url(../images/jDrawer-horizontal-item-r-active.gif) repeat-y scroll 100% 0%;
+}
+
+.jDrawer-horizontal .jDrawer-content
+{
+	color: #969696;
+	padding: 10px;
+	background: transparent url(../images/jDrawer-horizontal-item-bg.gif) repeat-y scroll 100% 0%;
+}
+
+.jDrawer-horizontal li.jDrawer-active .jDrawer-content
+{
+	color: #333;
+	background: transparent url(../images/jDrawer-horizontal-item-bg-active.gif) repeat-y scroll 100% 0%;
+}
+
+.jDrawer-horizontal .jDrawer-content h3
+{
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.jDrawer-vertical .jDrawer-buffer
+{
+	padding-top: 5px;
+}
+
+.jDrawer-horizontal .jDrawer-buffer
+{
+	float: left;
+}
+
+.jDrawer .jDrawer-divider
+{
+	border-top: 1px solid #E0E0E0;
+	margin: 5px 0px;
+}
+
+.jDrawer-vertical li.jDrawer-active .jDrawer-divider
+{
+	border-top: 1px solid #969696;
+}

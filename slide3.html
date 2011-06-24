@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>云游戏首页-云游戏，高端的游戏</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="fade-plugin.js"></script>
+	</head>
+<body>
+	<div id="top-game">
+      <div class="slideshower">
+        <div class="slide r1">
+        </div>
+        <div class="slide r2">
+        </div>
+        <div class="slide r3">
+        </div>
+        <div class="slide r4">
+        </div>
+      </div>
+    </div>
+	<script type="text/javascript">
+        (function($) {
+        function init() {
+			$("#top-game .slideshower").fadeTransition({pauseTime: 4000,
+                                                 transitionTime: 1000,
+                                                 ignore: null,
+                                                 delayStart: 4000,
+                                                 pauseOnMouseOver: true,
+                                                 createNavButtons: true});
+        }
+        
+        
+        $(document).ready(init);
+      })(jQuery);
+	</script>
+</body>
+</html>

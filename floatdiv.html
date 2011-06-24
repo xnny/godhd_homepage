@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>浮动窗口</title>
+	</head>
+	<style type="text/css">
+		body { margin:0;padding:0;background:url('http://img.baidu.com/img/baike/5_birthday_banner.jpg'); }
+		#page { width:500px;height:610px;position:absolute;left:500px;top:30px;z-index:10;border:solid 10px #fff;border-top:none;background:url('images/xxd.jpg') top left no-repeat; }
+		#bg { width:500px;height:600px;background:#000;position:absolute;left:0;top:10px;
+			opacity:0.8;filter:alpha(opacity=80); }
+		#main { width:500px;height:600px;position:absolute;left:0;top:10px;z-index:9999; }
+		#main p { text-align:center; }
+	</style>
+	<body>
+		<div id="page">
+			<div id="bg"></div>
+			<div id="main">
+				<p><img src="http://aoisola.cocolog-nifty.com/aoi.jpg" alt="x"></p>
+			</div>
+		</div>
+	</body>
+</html>

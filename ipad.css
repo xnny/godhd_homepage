@@ -1,0 +1,640 @@
+html, body { background-color: #f2f2f2; }
+
+/* -- Global -- */
+#main { margin: 0 auto; min-width: 982px; }
+#main .content,
+#main.content { width: 880px; margin: 0 auto 18px; padding: 15px 50px 0; zoom: 1; }
+#main.content .content,
+#main .content .content { width: auto; padding: 0; }
+#main.content: after,
+#main.content .selfclear: after,
+#main .content: after,
+#main .content .selfclear: after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+h2, h3, h4 { line-height: 1.4em; margin-bottom: 1em; }
+#promofooter h4 { margin-bottom:0; }
+
+#promofooter #promos .buy h4 { display: block; padding: 15px 12px 0 15px; margin-bottom: 10px; text-align: left; z-index: 101; }
+#promofooter #promos .buy h5 { font-size: 12px; }
+#promofooter #promos .buy ul { padding-right: 0; }
+#promofooter #promos .buy ul li.ipad { padding-top: 8px; }
+#promofooter #promos .buy p a { padding: 0; display: inline; }
+#promofooter #promos .buy p .more { padding-right: 8px; background-position: 100% 60%; *background-position: 100% 70%; }
+
+#promofooter #promos .notify a { margin-left: 12px; }
+#promofooter #promos .notify p { width: 130px; padding-left: 15px; margin-bottom: 4px; font-size: 12px; line-height: 18px; color: #777; }
+#promofooter #promos .notify h4 { margin-bottom: 23px; padding-left: 15px; padding-top: 15px; }
+#promofooter #promos .notify .image { position: absolute; top: 44px; right: 13px; }
+
+@media only screen and (max-device-width: 768px) {
+	#promofooter { font-size: 12px; }
+	#promofooter #promos .notify p { width: 120px; }
+}
+
+#directorynav h3 a { color: #666; }
+
+.content { font-size: 1.1667em; line-height: 1.5em; word-spacing: -1px; }
+.content section h1 { margin-bottom: 8px; font-size: 1.7em; line-height: 1.2em; }
+.content article h1,
+.content section h1 { font-weight: normal; }
+.content h2 { font-size: 1.7em; }
+.content h2 span { color: #888; }
+.content section h3 { font-size: 1em; margin-bottom: .4286em; }
+.content figure { margin: 0; }
+
+.content p { font-size: 1em; line-height: 1.5em; }
+
+.content .left { float: left; }
+.content .right { float: right; }
+.content .center { text-align: center; margin-right: auto; margin-left: auto; }
+.content .middle { vertical-align: middle; }
+
+.content .padtop { padding-top: 4em; }
+.content .padright { padding-right: 50px; }
+.content .padleft { padding-left: 50px; }
+.content .padbottom { padding-bottom: 2em; }
+
+.content .flushtop { margin-top: -4em; _position: relative; }
+.content .flushright { margin-right: -50px; _position: relative; }
+.content .flushleft { margin-left: -50px; _position: relative; }
+.content img.inline { margin-top: 1em; }
+.content img.center { display: block; margin-right: auto; margin-left: auto; }
+
+#main .content aside.callout { font-size:1em; }
+
+.shadow { -webkit-box-shadow: rgba(0,0,0,0.35) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.35) 0 1px 3px; box-shadow: rgba(0,0,0,0.35) 0 1px 3px; }
+img.shadow { padding: 5px; background: #fff; margin-bottom: 2px; *border: 1px solid #e2e2e2; _position: relative; }
+
+#main .gradient { background-color: #f9f9f9; background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(242,242,242)), color-stop(1, rgb(253,253,253))); background-image: -moz-linear-gradient( center top, rgb(242,242,242) 0%, rgb(253,253,253) 100%); }
+#main .gradient p { color: #666; }
+
+sup { line-height:10px; }
+ol.sosumi,
+ul.sosumi { width: 940px; margin: 18px auto; font-size: .8333em !important; *padding-left: 2.5em; _padding-left: 2.5em; }
+.sosumi a { color: #333; }
+.sosumi li { padding-bottom: 5px; }
+
+
+nav.back-to { margin: 0 -50px 52px; padding: 13px 20px; border-bottom: 1px solid #ebebeb; 
+background: -webkit-gradient( linear, 0 0, 0 100%, from(#fff), to(#f5f5f5)); background: -moz-linear-gradient(center top, #fff, #f5f5f5); }
+nav.back-to .back { padding-left: 12px; background: url(http://images.apple.com/global/elements/arrows/lessarrow_med_08c.gif) no-repeat 0 50%; }
+
+.more { color: #08c; padding-right: 10px; white-space: nowrap; background: url(http://images.apple.com/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 50%; zoom: 1; }
+.intro .more { background: url(http://images.apple.com/global/elements/arrows/morearrow_big_08c.gif) no-repeat 100% 50%; text-align:left; display:inline; }
+a.more-span:hover { text-decoration: none; }
+a.more-span:hover span { text-decoration: underline; }
+a.block { color: inherit; cursor: pointer; }
+a.pillbutton,
+a.pillbutton: hover,
+a.block,
+a.block: hover { text-decoration: none; }
+a.block .link,
+a.block .more { color: #08c; }
+a:hover .link,
+a:hover .more { text-decoration: underline; cursor: pointer; }
+a.rotate { display:inline-block; display:-moz-inline-block; *display:inline; *zoom:1; /*padding-top:33px;*/ font-size:0.85em; }
+a.rotate div { background:url(http://images.apple.com/ipad/images/button_rotate_20110302.png) 50% 0% no-repeat; width:35px; height:35px; }
+a.rotate:hover div { background-position:50% -35px; }
+a.rotate:active div { background-position:50% -70px; }
+
+#promofooter { *margin-top:0; }
+
+/* -- Legibility on iPad -- */
+@media only screen and (max-device-width: 768px) {
+	/* Changing body font-size to ~13.714px, which changes .content font-size to 16px */
+	body { font-size: .85714em; }
+}
+
+
+/* -- Product Header -- */
+#productheader { font-size: 1em; }
+#productheader h2 { margin-top: -2px; padding-bottom: 3px; *margin-top: -1px; }
+#productheader h2 a { width:100px; }
+#productheader h2 a img { display: block; }
+
+@media only screen and (max-device-width: 768px) {
+	#productheader ul li a { margin-top: .875em; }
+}
+
+body#features		#productheader ul li a:hover,
+body#built-in-apps 	#productheader ul li a:hover, 
+body#from-app-store #productheader ul li a:hover,
+body#ios4			#productheader ul li a:hover { color: #08c !important; }
+
+body#features.overview		 #productheader li#pn-features a,
+body#built-in-apps.overview	 #productheader li#pn-built-in-apps a,
+body#from-app-store.overview #productheader li#pn-from-app-store a,
+body#ios4.overview		     #productheader li#pn-ios4 a,
+body#specs				     #productheader li#pn-specs a,
+body#guided-tours	 		 #productheader li#pn-guided-tours a { color: #999 !important; cursor: default; }
+
+body#features		#productheader li#pn-features a,
+body#built-in-apps	#productheader li#pn-built-in-apps a,
+body#from-app-store	#productheader li#pn-from-app-store a,
+body#ios4			#productheader li#pn-ios4 a,
+body#specs			#productheader li#pn-specs a,
+body#guided-tours	#productheader li#pn-guided-tours a { color: #999; }
+
+/* -- Video thumbnail -- */
+.video-thumb { float: left; text-align: center; line-height:19px; cursor: pointer;  }
+.video-thumb .image { display: block; width: 152px; padding: 6px; position: relative; -webkit-box-shadow: rgba(0,0,0,0.8) 0 0 1px; -moz-box-shadow: rgba(0,0,0,0.5) 0 0 1px; box-shadow: rgba(0,0,0,0.5) 0 0 1px; *border:1px solid #e3e3e3; }
+.video-thumb .image:after { content: ' '; background: url(http://images.apple.com/ipad/images/video_shadow_20110302.jpg) no-repeat; bottom: -10px; display: block; height: 10px; left: -2px; margin: 0px; position: absolute; width: 168px; }
+.video-thumb .image img { display: block; }
+.video-thumb .image .play { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url(http://images.apple.com/ipad/images/video_play_20110302.png) no-repeat 50% 50%; _behavior:url(/global/scripts/lib/iepngfix.htc); _height:66px; _margin-top:29px; _margin-left:60px; }
+.video-thumb:hover .image .play { background-image: url(http://images.apple.com/ipad/images/video_play_hover_20110302.png); }
+.video-thumb .more { display: inline-block; text-align: center; margin: 8px auto 0; padding-right: 8px; }
+
+@media only screen and (max-device-width: 768px) {
+	.video-thumb .image { -webkit-box-shadow: none; box-shadow: none; border:1px solid #e3e3e3; }
+}
+
+
+/* badges */
+.content .badge { position: relative; padding: 0 8px; *padding-bottom: 1px; top: -3px; *top: -1px; z-index: 1; display: inline-block; *display: inline; *zoom: 1; font-weight: normal; text-shadow: 0 1px 0 rgba(0,0,0,.3); color: #fff; font-size: 12px; line-height: 18px; -webkit-font-smoothing: auto;
+	border: 1px solid #f88c13; border-top-color: #cf7310; border-bottom-color: #ffa312;
+	background: #ff9a13;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff8e14), to(#ffa312));
+	background: -moz-linear-gradient(top, #ff8e14, #ffa312);
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px #cf7310; -moz-box-shadow: inset 0 1px 1px #cf7310; box-shadow: inset 0 1px 1px #cf7310;
+}
+.content .badge:nth-child(1n) { border: 0; line-height: 20px; }
+
+/* Back-page hero
+---------------------------------*/
+.back-page header { zoom: 1; margin-bottom: 10px; background-color: #fff; margin: 0 -50px; padding: 0 50px; }
+.back-page header:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+.back-page header img.hero { float: right; margin-left: 20px; }
+
+.back-page header hgroup { padding-top: 39px; }
+.back-page header hgroup .icon { margin-bottom: 14px; }
+.back-page header hgroup h1 { margin-bottom: 2px; }
+.back-page header hgroup p.intro { font-size: 1.3em; line-height: 1.35em; margin-bottom: 28px; }
+
+/* iPad Gallery
+---------------------------------*/
+
+.image-gallery { width:474px; height:413px; background: url(http://images.apple.com/ipad/images/ipad_gallery_bg_20110302.jpg) no-repeat; }
+.image-gallery .imagecontent { height:385px; }
+.image-gallery .imagecontent img { margin:37px 0 0 44px; }
+.image-gallery .imagecontent div { position:relative; }
+.image-gallery h3 { font-weight:normal; }
+
+.ipad-gallery-nav { width:264px; margin:0 auto; _width:270px; }
+.ipad-gallery-nav li { float:left; margin-right:12px; text-align: center; }
+.ipad-gallery-nav li.last { margin-right: 0 !important; width: 78px !important; _padding-top:0 !important; }
+.ipad-gallery-nav li a { width:81px; height:75px; display:block; text-decoration:none; cursor:pointer; }
+.ipad-gallery-nav li a:hover { text-decoration:none; }
+.ipad-gallery-nav li a:hover div { background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.png) no-repeat 0 -79px; _background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.gif) no-repeat 0 -79px; }
+.ipad-gallery-nav li a:hover span { color:#08c; }
+.ipad-gallery-nav li a span { font-size:0.786em; line-height:0.929em; color:#000; text-decoration:none; width:81px; }
+.ipad-gallery-nav li a div { padding-top:18px; width:81px; height:57px; }
+.ipad-gallery-nav li a.active { cursor:default; width:81px; }
+.ipad-gallery-nav li a.active div { background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.png) no-repeat 0 0; _background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.gif) no-repeat 0 0; }
+.ipad-gallery-nav li a.active:hover span { color:#888; }
+.ipad-gallery-nav li a.active:hover div { background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.png) no-repeat 0 0; _background:url(http://images.apple.com/ipad/images/ipad_gallery_thumb_bg_20110302.gif) no-repeat 0 0; }
+.ipad-gallery-nav li a.active span { color:#888; }
+
+.image-gallery-portrait { width:356px; height:497px; background: url(http://images.apple.com/ipad/images/ipad_gallery_portrait_bg_20110302.jpg) no-repeat; }
+.image-gallery-portrait .imagecontent { height:479px; }
+.image-gallery-portrait .imagecontent img { margin:44px 0 0 41px; }
+.ipad-gallery-nav.portrait { width: 320px; _width:324px; }
+.ipad-gallery-nav.portrait li { margin-right:16px; }
+.ipad-gallery-nav.portrait li.last { width: 68px !important; }
+.ipad-gallery-nav.portrait li a { width:68px; height:89px; }
+.ipad-gallery-nav.portrait li a:hover div { background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.png) no-repeat 0 -93px; _background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.gif) no-repeat 0 -93px; }
+.ipad-gallery-nav.portrait li a div { width:68px; height:71px; }
+.ipad-gallery-nav.portrait li a span { top:94px; left:0; width:68px; }
+.ipad-gallery-nav.portrait li a.active div { width:68px; background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.png) no-repeat 0 0; _background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.gif) no-repeat 0 0; }
+.ipad-gallery-nav.portrait li a.active:hover div { background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.png) no-repeat 0 0; _background:url(http://images.apple.com/ipad/images/ipad_gallery_portrait_thumb_bg_20110302.gif) no-repeat 0 0; }
+
+.image-gallery-portrait li,
+.image-gallery-portrait li a,
+.image-gallery-portrait li a.active { _width:68px; }
+
+/* simple dot navs
+---------------------------------*/
+.simple-nav { height:15px; text-align:center; position:absolute; bottom:0; left:0; width: 100%; overflow:hidden; line-height:1em; }
+.simple-nav li,
+.simple-nav li a { display:-moz-inline-stack; display:inline-block; *display:inline; zoom:1; }
+.simple-nav li { position:relative; margin-right:3px; width:11px; height:11px; overflow:hidden; *margin-right: 5px; }
+.simple-nav li.last-dot { margin-right: 0; }
+.simple-nav li a { position:absolute; width:15px; height:45px; top:-2px; left:-2px; outline:none; cursor:pointer; text-indent:-9999px; line-height:0; background:url(http://images.apple.com/apps/imovie/images/gallerynav_simple_large20110302.png) no-repeat 0 0; }
+.simple-nav li a:hover { top:-17px; }
+.simple-nav li a.active { cursor:default; top:-32px; opacity:1; -moz-opacity:1; }
+
+.simple-nav.small { height:13px; }
+.simple-nav.small li { width:9px; height:9px; }
+.simple-nav.small li a { position:absolute; width:13px; height:39px; background:url(http://images.apple.com/apps/imovie/images/gallerynav_simple20110302.png) no-repeat 0 0; }
+.simple-nav.small li a:hover { top: -15px; }
+.simple-nav.small li a.active { top:-28px; }
+
+
+/* gallery nav
+----------------------------------*/
+.gallery-nav { text-align: center; }
+.gallery-nav li { display:-moz-inline-stack; display:inline-block; *display: inline; zoom: 1; width: 128px; margin: 0 2px; *margin: 0 4px; vertical-align: top; }
+.gallery-nav li a .thumb { display: block; *display: inline; zoom: 1; cursor: pointer; background: url(http://images.apple.com/ipad/images/gallerynav_thumb_bg_20110302.jpg) 0 -208px no-repeat; }
+.gallery-nav li a:hover .thumb { background-position: 0 -104px; }
+.gallery-nav li a.active .thumb ,
+.gallery-nav li a.active:hover .thumb { background-position: 0 1px; cursor: default; }
+
+
+/* Movies
+----------------------------------*/
+.gallery-content .close { position:absolute; top:12px; left:13px; width: 29px; height:29px; text-indent: -9999px; z-index:1; background: url(http://images.apple.com/ipad/images/button_close_20110302.png) no-repeat 0 0; _background: url(http://images.apple.com/ipad/images/button_close_20110302.gif) no-repeat 0 0; overflow:hidden; }
+.gallery-content .close:hover { background-position:0 100%; }
+.gallery-content { position:absolute; width:880px; padding-top:50px; }
+.gallery-content .video-content { position:relative; }
+.gallery-content .moviePanel {height: 480px; width: 848px; z-index: 0; }
+.hero-video { top:0; width:880px; height:0; overflow:hidden; }
+
+.swap-video { display:none; }
+.swapView .swap-video { display:block; }
+
+.video-wrapper { position:relative; z-index:999; }
+.video-outgoing { width:880px; }
+.video-incoming { position:absolute; width:880px; z-index:10; margin-top:-25px; }
+.video-incoming .swap-video { height:535px; z-index:15; }
+.video-absolute { position:absolute; }
+
+
+/* Smart Cover VR
+----------------------------------*/
+#vr-wrapper { min-height: 484px; _height: 484px; }
+#vr-wrapper #hardware { min-height: 477px; _height: 477px; }
+#vr-wrapper p.ipad-color,
+#vr-wrapper .cover-colors { color: #999; font-size: .8em; font-style: italic; }
+#vr-wrapper p.ipad-color { margin-top: -9px; padding-left: 95px; }
+#vr-wrapper .cover-colors { margin-top: 3px; padding-right: 269px; width: 308px; float: right; }
+#vr-wrapper .cover-colors .column { width: 146px; height: 6px; border: 1px solid #d5d5d5; border-top: none; text-align: center; }
+#vr-wrapper .cover-colors .column span { display: block; margin: -5px auto 0; background-color: white; }
+#vr-wrapper .cover-colors .column.first span { width: 120px; }
+#vr-wrapper .cover-colors .column.last span { width: 90px; }
+#vr-wrapper .vr { clear: both; width:100%; height:430px; z-index:1; }
+#vr-wrapper .hardware { *zoom: 1; }
+#vr-wrapper .hardware:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+#vr-wrapper .cover-content { display: none; }
+#vr-wrapper .cover .cover-content { display: block; }
+
+#vr-wrapper .cover-nav { margin: 13px 0 0; line-height: 0; position: relative; z-index: 1; }
+#vr-wrapper .cover-nav li { margin: 0 -3px; display: inline-block; display: -moz-inline-block; *display: inline; *zoom: 1; line-height: 1em; *margin: 0 -1px; }
+#vr-wrapper .cover-nav li a { display: block; width: 22px; height: 22px; padding: 6px; line-height: 1em; text-decoration: none; }
+#vr-wrapper .cover-nav li a img.ios { display: none; }
+#vr-wrapper .cover-nav li a:hover { text-decoration: none; }
+#vr-wrapper .cover-nav li a.active { background: url(http://images.apple.com/ipad/smart-cover/images/dot_bg_active_20110309.jpg) no-repeat 0 0; }
+
+#vr-wrapper .hardware-chooser { margin-top: -44px; float: left; padding-left: 92px; z-index: 2; }
+#vr-wrapper .cover-chooser { float: right; padding-right: 274px; *padding-right: 264px; }
+
+/* iPad and iPhone Media Query */
+@media only screen and (max-device-width: 768px) {
+	#vr-wrapper .cover-nav,
+	#vr-wrapper .cover-colors,
+	#vr-wrapper .ipad-color,
+	#vr-wrapper .cover-nav li a img.desktop { display: none; }
+
+	.isiOS4_3 #vr-wrapper .cover-nav,
+	.isiOS4_3 #vr-wrapper .cover-colors,
+	.isiOS4_3 #vr-wrapper .ipad-color,
+	.isiOS4_3 #vr-wrapper .cover-nav li a img.ios { display: block !important; }
+	
+	.isiOS4_3 #vr-wrapper .cover-nav li { margin: 0; }
+	.isiOS4_3 #vr-wrapper .cover-nav a { width: 28px; height: 28px; padding-top: 5px; }
+	.isiOS4_3 #vr-wrapper .cover-nav a.active { background: url(http://images.apple.com/ipad/smart-cover/images/ios_dot_bg_active_20110324.jpg) no-repeat 0 0; }
+	
+	.isiOS4_3 #vr-wrapper .cover-nav.hardware-chooser { margin-top: -49px; padding-left: 75px; }
+	.isiOS4_3 #vr-wrapper .cover-nav.cover-chooser { padding-right: 213px; }
+	
+	.isiOS4_3 #vr-wrapper .ipad-color { padding-left: 85px; }
+	.isiOS4_3 #vr-wrapper .cover-colors { width: 418px; padding-right: 213px; }
+	.isiOS4_3 #vr-wrapper .cover-colors .column { width: 198px; }
+}
+
+@-moz-document url-prefix() { 
+	#vr-wrapper .cover-colors { width: 300px; padding-right: 279px; }
+	#vr-wrapper .cover-colors .column { width: 144px }
+}
+
+
+/* iOS 4
+----------------------------------*/
+#ios4 .content { background: #fff url(http://images.apple.com/ipad/ios4/images/bottom_bg_20110302.jpg) 0 100% repeat-x; }
+
+#ios4 hgroup { margin-top:31px; }
+#ios4 hgroup h1 { text-align:center; } 
+#ios4 header hgroup p.intro { margin-top:-18px; font-size: 1.3em; line-height: 1.35em; margin-bottom: 38px; text-align:center; }
+
+#ios4 section.row { clear:both; }
+#ios4 section.row.border-bottom { border-bottom:1px solid #ccc; }
+#ios4 section h1 { font-size: 1.7em; font-weight: normal; line-height: 1.2em; padding-top:71px; }
+#ios4 section h2 { margin-bottom: 0.25em; font-size:1.2857em; line-height:1.27em; color:#252525; margin-top:-0.2em; }
+
+#ios4 #interface img.flushright { margin-left:-620px; position:relative; z-index:1; }
+#ios4 #interface .grid2col { padding-bottom: 65px; }
+#ios4 #interface .grid2col .column.first { position:relative; z-index:2; width:440px; *margin-top: -190px; }
+#ios4 #interface .grid2col .column.first h1 { padding-top:175px; *padding-top:0; }
+video { width: 847px; height: 479px; }
+
+#ios4 #interface .grid3col { clear:both; margin-bottom:50px; position:relative; z-index:2; }
+#ios4 #interface .grid3col p { width:270px; }
+#ios4 #interface .grid3col img { position: relative; }
+#ios4 #interface section h1 { padding-top:0; }
+
+#ios4 #app-store p { width:670px; }
+
+#ios4 #hardware-software p.top-paragraph { width:705px; margin-bottom:75px; }
+#ios4 #hardware-software { min-height:782px; _height:782px; background:url(http://images.apple.com/ipad/ios4/images/hardware_software_20110308.jpg) 0 100% no-repeat; }
+#ios4 #hardware-software ul { width:400px; margin-left:470px; }
+#ios4 #hardware-software ul li { padding-bottom:33px; }
+#ios4 #hardware-software section h1 { padding-top:0; }
+
+#ios4 section.vertical img.right { margin-right:44px; }
+#ios4 section.vertical img.left { margin-left:44px; margin-right:72px; }
+
+#ios4 #safe-secure { padding-top:65px; }
+#ios4 #safe-secure h1 { padding-top:40px; }
+#ios4 #safe-secure p { width:415px; margin-top:15px; }
+
+#ios4 #travellers { padding-top:20px; }
+#ios4 #travellers .column { margin-top:-40px; }
+#ios4 #travellers .first { _margin-top: -20px; }
+#ios4 #travellers .last { _width: 45%; }
+#ios4 #travellers h1 { padding-top:65px; }
+
+#ios4 #accessibility .column { margin-top:-20px; }
+#ios4 #accessibility .last { _margin-top: 0; }
+#ios4 #accessibility h1 { padding-top:100px; }
+#ios4 #accessibility p { width:425px; }
+
+#ios4 #app-store #discoverable { width: 6687px; min-height:384px; *height: 384px; position: relative; z-index: 10000; }
+#ios4 #app-store #discoverable figure { float:left; margin-left:23px; padding-top:40px; }
+#ios4 #app-store #discoverable figure.first { margin-left:50px; }
+#ios4 #app-store #discoverable figure.horizontal { margin-top:65px; }
+
+#ios4 #app-store span.ipad-iphone-swipe { width:100%; display:none; text-align:center; margin-top:15px; }
+
+#ios4 #promofooter .promo { z-index: 1;}
+
+@media only screen and (max-device-width: 768px) {
+	#ios4 #app-store span.ipad-iphone-swipe { display:block; }
+	#ios4 #app-store .mask { overflow: hidden; width: 980px; }
+}
+
+#ios4 #app-store #discoverable figcaption { font-size:1em; color:#777; padding-bottom:9px; }
+
+#ios4 #app-store .slyder-mask { width:880px; height:415px; position:relative; }
+#ios4 #app-store .slyder-mask .nav { text-align:center; width:880px; margin-top:1px; *margin-top:4px; }
+#ios4 #app-store .slyder-mask .nav a { display: inline-block; width: 13px; height: 13px; margin:0 1px; background: url(http://images.apple.com/apps/imovie/images/gallerynav_simple20110302.png) no-repeat 0 0; cursor: pointer; }
+#ios4 #app-store .slyder-mask .nav a:hover { background-position: 0 -13px; }
+#ios4 #app-store .slyder-mask .nav a.active { background-position: 0 100%; cursor: default; }
+#ios4 #app-store .slyder-mask .arrow { position:absolute; top:0; width:490px; height:375px; display:block; cursor: pointer; z-index: 10000; }
+#ios4 #app-store .slyder-mask .right { right:-50px; }
+#ios4 #app-store .slyder-mask .right:hover { background:url(http://images.apple.com/ipad/ios4/images/paddle_right_20110302.png) 100% 40px no-repeat; }
+#ios4 #app-store .slyder-mask .left { left:-50px; }
+#ios4 #app-store .slyder-mask .left:hover { background:url(http://images.apple.com/ipad/ios4/images/paddle_left_20110302.png) 0 40px no-repeat; }
+#ios4 #app-store .slyder-mask .disabled { display:none !important; }
+
+#ios4 #app-store .slyder-mask .mask { overflow:hidden; position:relative; width:980px; height:400px; }
+#ios4 #app-store .slyder-mask .container { position:absolute; }
+
+#ios4 #updates { min-height:243px; _height:258px; background:url(http://images.apple.com/ipad/ios4/images/footer_separater_20110302.png) 0 0 no-repeat; margin:0 -10px 0 -10px; padding:0 10px 0 10px; }
+#ios4 #updates .column.first { width:407px; }
+#ios4 #updates aside { margin-top:52px; }
+#ios4 #updates aside a { position:relative; padding: 25px 0 38px 30px; border-top:1px solid #f9f9f9; background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#f3f3f3)); background-image: -moz-linear-gradient(center top, #e8e8e8, #f3f3f3); *background-color: #f3f3f3; -webkit-box-shadow: rgba(0,0,0,0.4) 0 1px 2px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 2px; box-shadow: rgba(0,0,0,0.4) 0 1px 2px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -khtml-border-radius: 3px; *border: 1px solid; *border-color: #e5e5e5 #dbdbdb #d2d2d2; }
+#ios4 #updates aside a:hover { background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f3f3f3)); background: -moz-linear-gradient(center top, #f3f3f3, #e8e8e8); *background-color: #e8e8e8; }
+#ios4 #updates aside p { font-size:1em !important; margin-bottom:0; padding-top:14px; margin-right:42px; color:#666; }
+#ios4 #updates aside img.left { margin-right:17px; margin-bottom:0; }
+#ios4 #updates aside h3 { font-size:1.2857em; line-height:1.2857em; }
+
+@media only screen and (max-device-width: 768px) {
+	#ios4 #safe-secure h1 { padding-top:20px; }
+	#ios4 #app-store .swipe { display: block; }
+	#ios4 #app-store #slyder { width: 930px; }
+	#ios4 #travellers .column { margin-top: 0; }
+	#ios4 #travellers h1 { padding-top:35px; }
+	#ios4 #accessibility .column { margin-top: 0; }
+	#ios4 #accessibility h1 { padding-top:80px; }
+}
+
+/* Accessories
+----------------------------------*/
+#accessories #main .content { padding-top: 60px; padding-bottom: 50px; background: #fff url(http://images.apple.com/ipad/features/images/features_bg_gradient_20110302.jpg) repeat-x 0px 100%; }
+#accessories #main .content section { clear: both; padding: 0 50px; }
+#accessories #main .content section h1 { margin-bottom: 8px; font-size: 1.5em; line-height: 1.2em; font-weight: normal; }
+#accessories #main .content section .flushright { margin-right: -100px; }
+#accessories #main .content section .flushleft { margin-left: -100px; }
+#accessories #main .content .grid2col { width: auto; }
+#accessories #main .grid2col .column { width: 368px; }
+
+#accessories header { margin-bottom: 40px; }
+#accessories header img.hero { margin: 0 -50px; }
+#accessories header hgroup h1 { text-align: center; margin-bottom: 15px; }
+#accessories header hgroup p.intro { padding: 0 30px; margin-bottom: 40px; font-size: 1.3em; line-height: 1.35em; text-align: center; }
+
+#accessories #smartcover #video-outgoing { width:780px; }
+#accessories #smartcover #video-incoming { margin-left:-50px; padding-bottom:10px; }
+
+#accessories #main .content #smartcover { padding-bottom: 70px; }
+#accessories #smartcover .hero { margin: 0 0 15px -61px; float:none; _position: relative; }
+#accessories #smartcover h1 { margin-top: -8px; }
+#accessories #smartcover p { width: 530px; }
+#accessories #smartcover .video-thumb { margin-top: 17px; margin-right: -10px; width:225px; }
+#accessories #smartcover .video-thumb .image { margin: 0px auto; }
+#accessories #smartcover .endState p { width: 100%; }
+
+#accessories #hdmi { margin-bottom:20px; }
+#accessories #hdmi img { margin-right:0; margin-bottom: -34px; }
+#accessories #hdmi p { margin-right: -27px; *position: relative; *zoom: 1; }
+#accessories #hdmi h1 { padding-top: 60px; }
+
+#accessories #camera-connection .column.first { margin-right: -80px; position: relative; z-index:2; }
+#accessories #camera-connection .column.first h1 { padding-top: 85px; position: relative; z-index: 2; }
+#accessories #camera-connection .column.first .ipad-gallery-nav { width: auto; font-size: 11px; text-align: center; }
+#accessories #camera-connection .column.first .ipad-gallery-nav li { margin-right:12px; }
+#accessories #camera-connection .column.first .ipad-gallery-nav li a { width:105px; }
+#accessories #camera-connection .column.first .ipad-gallery-nav li a div { margin:0 auto; }
+#accessories #camera-connection .column.first .ipad-gallery-nav li a p { padding-top:9px; }
+
+#accessories #camera-connection .column.last { position:relative; z-index:1; width:491px; }
+#accessories #camera-connection .column.last .imagecontent { float:right; height: 605px; width: 491px; background:url(http://images.apple.com/ipad/accessories/images/camera_bg_20110302.jpg) 0 0 no-repeat; }
+#accessories #camera-connection .column.last .imagecontent figure { width:491px; height:605px; margin:0; }
+
+#accessories #dock { margin-bottom: 85px; }
+#accessories #dock p { padding-right: 5px; }
+#accessories #dock h1 { padding-top: 110px; }
+#accessories #dock img.left { margin: -47px 0 0 -2px }
+
+#accessories #keyboard h1 { padding-top: 15px; }
+#accessories #keyboard img { margin-bottom: 138px; }
+
+#accessories #main .grid2col.grid { padding: 0 50px; margin-bottom: 15px; }
+#accessories #main .grid2col.grid img { margin: 0 auto 15px; display: block; }
+#accessories #main .grid2col.grid h1 { font-size: 1.25em; font-weight: bold; margin-bottom: 5px; }
+#accessories #main .grid2col.grid .column { padding: 0; clear: none; }
+#accessories #main .grid2col.grid .column.first { width: 345px; }
+#accessories #main .grid2col.grid .grid-bottom-padding { margin-top:10px; }
+
+@media only screen and (max-device-width: 768px) {
+	#accessories header hgroup p.intro { padding: 0; }
+	#accessories #smartcover p { width: 69%; }
+	#accessories #hdmi h1 { padding-top: 65px; }
+	#accessories #dock p { padding-right: 0px; }
+	#accessories #keyboard h1 { padding-top: 0px; }
+}
+
+/* Notify Me */
+#notifyme #productheader .notifymes { background-position: 0 -75px; cursor:default; }
+#notifyme .content { padding-top:29px; }
+#notifyme header { height:574px; border-bottom:1px solid #ccc; }
+#notifyme header .hero { margin:0 30px 0 55px; }
+#notifyme header hgroup { padding-top:63px; }
+#notifyme header hgroup h1 { margin:0; }
+#notifyme header hgroup p { font-size:18px; line-height:24px; }
+#notifyme header #notify-form-wrapper { overflow:hidden; width:370px; height:225px; }
+#notifyme header #notify-form-wrapper iframe.notify-form { float:left; width:330px; height:185px; background:#f5f5f5; padding:20px; margin-top:18px; }
+
+#notifyme #first-gen { padding:42px 0 19px 0; clear:both; height:120px; }
+#notifyme #first-gen img.left { margin-top:0; margin-bottom:0; }
+#notifyme #first-gen .column.last { padding-top:32px; width:390px; }
+#notifyme #first-gen .column.last a { font-size:18px; }
+
+/* Notify Me - Thank You*/
+#thankyou #productheader .notifymes { background-position: 0 -75px; cursor:default; }
+#thankyou .content { padding-top:48px; padding-bottom:49px; }
+#thankyou header h1 { margin:0 0 5px 0; }
+#thankyou header p.intro { font-size:18px; line-height:24px; width:520px; text-align:center; margin:0 auto; padding-bottom:50px; }
+
+/*****Overview******************/
+
+#wifi-3g .content { padding: 41px 100px 0; width: 780px; background: #fff url(http://images.apple.com/ipad/built-in-apps/images/gradient_bg_20110302.jpg) repeat-x 0 100%; }
+#wifi-3g .content .flushleft { margin-left: -100px; }
+#wifi-3g .content .flushright { margin-right: -100px; }
+
+#wifi-3g .rounded { border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -o-border-radius: 3px; -khtml-border-radius: 3px; }
+#wifi-3g .callout { border: 1px solid #e5e5e5; background: #fafafa; font-size: 1em; line-height: inherit; }
+
+#wifi-3g header { margin-bottom: -5px; z-index: 1; }
+#wifi-3g header hgroup h1 { text-align: center; margin-bottom:0; }
+#wifi-3g header hgroup p.intro { font-size: 1.3em; line-height: 1.35em; margin-bottom: 16px; text-align:center; margin:0 auto 28px; width:680px; }
+#wifi-3g header img.hero { padding-bottom:10px; }
+
+#wifi-3g #network { padding-bottom: 32px; margin-top:-20px; }
+#wifi-3g #network, 
+#wifi-3g #no-contract, 
+#wifi-3g #wifi-or-3g { border-bottom: 1px solid #ccc; }
+#wifi-3g #network h1 { _position: relative; z-index: 1; }
+#wifi-3g p.shorter { width: 85%; padding-bottom: 12px; }
+
+#wifi-3g #wifi-or-3g { padding-bottom: 37px; z-index: 2; }
+#wifi-3g #wifi-or-3g p { padding-top: 17px; }
+#wifi-3g #wifi-or-3g .first,
+#wifi-3g #wifi-or-3g .last { width: 48%; margin-right: -23px; _position: relative; }
+#wifi-3g #wifi-or-3g .first p { padding-bottom: 93px; }
+#wifi-3g #wifi-or-3g .last p { padding-bottom: 50px; }
+#wifi-3g #wifi-or-3g .first img,
+#wifi-3g #wifi-or-3g .last img { margin-left: 35px; margin-top:-8px; }
+#wifi-3g #wifi-or-3g img.wifiImg { margin-left: 113px; margin-top:-30px; }
+#wifi-3g #wifi-or-3g img.wifi3gImg { margin-left: 100px; margin-top:-30px; }
+
+#wifi-3g #faster-downloads { padding-top: 38px; padding-bottom: 14px; }
+#wifi-3g #faster-downloads p { padding-top: 5px; }
+
+#wifi-3g #no-contract { padding: 8px 0 60px; margin-bottom: 47px; }
+
+#wifi-3g #no-contract #comparison { font-size: .8571em; }
+#wifi-3g #no-contract #comparison .callout { margin-bottom:0; }
+#wifi-3g #no-contract #comparison h1 { margin: 0; line-height: 1em; }
+#wifi-3g #no-contract #comparison .column { width: 48.5%; }
+#wifi-3g #no-contract #comparison dl { width: 190px; margin: 0 30px 0 0; border: 0 solid #eaeaea; border-top-width: 1px; border-bottom-width: 1px; line-height: 3.0833em; float: right; clear: right; }
+#wifi-3g #no-contract #comparison dl.top,
+#wifi-3g #no-contract #comparison dl.bottom { border: none; }
+#wifi-3g #no-contract #comparison dl.top { margin-top: 18px; }
+#wifi-3g #no-contract #comparison dl.bottom { margin-bottom: 18px; }
+#wifi-3g #no-contract #comparison dt { float: left; }
+#wifi-3g #no-contract #comparison dd { float: right; font-weight: bold; }
+#wifi-3g #no-contract #comparison .first.column img.left { margin: 62px 0 0 37px; }
+#wifi-3g #no-contract #comparison .last.column img.left { margin: 57px 0 0 36px; }
+
+#wifi-3g article h1.article_title { margin: 32px 0 0; padding: 0; }
+#wifi-3g article #signup .first { width: 36%; padding: 30px 0 52px; }
+#wifi-3g article #signup img { margin: 0; position: absolute; bottom: 0; right: 55px; }
+#wifi-3g article #signup h1 { padding-top: 0; }
+#wifi-3g article #signup h1,
+#wifi-3g article #usage h1,
+#wifi-3g article #plan h1 { font-size: 1.2em; font-weight :bold; }
+#wifi-3g article { padding: 0 0 6px; background: url(http://images.apple.com/ipad/3g/images/wifi_3g_signup_20110302.jpg) 357px 100% no-repeat; border-top: 1px solid #CCC; }
+#wifi-3g article section { width:256px; padding: 10px 0 0; }
+
+#wifi-3g #usage .last { padding-top: 15px; }
+
+#wifi-3g #plan .first { width: 41%; padding-top: 25px; }
+
+
+#main sup { font-size:0.7143em !important; }
+
+@media only screen and (max-device-width: 768px) {
+	#wifi-3g header hgroup p.intro { width:720px; }
+	#wifi-3g #wifi-or-3g .first p { padding-bottom: 122px; }
+}
+
+
+/* Guided Tours */
+#guided-tours #main .content .video-content ul.default-watch { position:absolute; padding-top:220px; text-align:center; top:0; left:0; width:100%; }
+#guided-tours #main .content .video-content ul.default-watch li a { position:relative; display:inline-block; color:#fff; font-size:1.1429em; }
+#guided-tours #main .content .video-content ul.default-watch li a:hover { text-decoration:none; }
+#guided-tours #main .content .video-content ul.default-watch li a:hover b,
+#guided-tours #main .content .video-content ul.default-watch li a:hover span { background-position:0 -85px; }
+
+#guided-tours #main .content .video-content ul.default-watch li b { background:url(http://images.apple.com/ipad/guided-tours/images/watch_cap_right_20110311.png) 0 0 no-repeat; width:50px; height:85px; display:block; position:absolute; top:0; right:0px; }
+#guided-tours #main .content .video-content ul.default-watch li span { background:url(http://images.apple.com/ipad/guided-tours/images/watch_cap_left_20110311.png) 0 0 no-repeat; padding: 31px 0 30px 74px; margin-right:50px; display:block; text-align:left; width:auto; }
+
+#guided-tours #main .content .video-content .endState ul { position:absolute; text-align:center; top:0px; left:170px; width:530px; padding-top:24%; }
+#guided-tours #main .content .video-content .endState ul li { *margin-bottom:-20px; }
+#guided-tours #main .content .video-content .endState ul li a { position:relative; display:inline-block; float:left; color:#fff; font-size:1.1429em; }
+#guided-tours #main .content .video-content .endState ul.imovie li a { float:none; }
+#guided-tours #main .content .video-content .endState ul li a:hover { text-decoration:none; }
+#guided-tours #main .content .video-content .endState ul li a:hover b,
+#guided-tours #main .content .video-content .endState ul li a:hover span { background-position:0 -85px; text-decoration:none; }
+#guided-tours #main .content .video-content .endState ul li.watch-again b { background:url(http://images.apple.com/ipad/guided-tours/images/watchagain_cap_right_20110311.png) 0 0 no-repeat; width:30px; height:85px; display:block; position:absolute; top:0; right:0px; }
+#guided-tours #main .content .video-content .endState ul li.watch-again span { background:url(http://images.apple.com/ipad/guided-tours/images/watchagain_cap_left_20110311.png) 0 0 no-repeat; padding: 30px 36px 30px 100px; margin-right:30px; display:block; text-align:left; width:auto; }
+#guided-tours #main .content .video-content .endState ul li.watch-next b { background:url(http://images.apple.com/ipad/guided-tours/images/watchnext_cap_right_20110311.png) 0 0 no-repeat; width:64px; height:85px; display:block; position:absolute; top:0; right:0px; }
+#guided-tours #main .content .video-content .endState ul li.watch-next span { background:url(http://images.apple.com/ipad/guided-tours/images/watchnext_cap_left_20110311.png) 0 0 no-repeat; padding: 30px 5px 30px 33px; margin-right:64px; display:block; text-align:left; width:auto; }
+
+#guided-tours #main .content { width:848px; padding-left:66px; padding-right:66px; }
+#guided-tours #main .content .gallery-content { width:848px; height:480px; padding-top:0; }
+#guided-tours #main .content .close { display:none; }
+#guided-tours #main .content img.title { margin-top:10px; }
+#guided-tours #main .content .video-wrapper { height:480px; padding-bottom:44px; }
+#guided-tours #main .content .video-default { position:relative; }
+#guided-tours #main .content .video-incoming { padding-top:16px; padding-bottom:27px; *height:480px; margin-top:0; }
+#guided-tours #main .content .video-incoming .swap-video { padding-top:16px; margin-top: -16px; }
+
+#guided-tours #main .content span.play { background:url(http://images.apple.com/ipad/guided-tours/images/video_play_20110311.png) 0 0 no-repeat; display:block; width:186px; height:110px; position:absolute; top:14px; left:14px; _behavior:url(/global/scripts/lib/iepngfix.htc); _height:76px; }
+#guided-tours #main .content ul.video-thumbs li { float:left; width:214px; height:174px; display:block; zoom:1; position:relative; margin-right:2px; }
+#guided-tours #main .content ul.video-thumbs li.last { margin-left:1px; margin-right:-1px; }
+#guided-tours #main .content ul.video-thumbs li a { background:url(http://images.apple.com/ipad/guided-tours/images/thumbs_bg_20110311.jpg) 0 0 no-repeat; display:block; width:186px; height:146px; padding:14px; color:#262626; font-size:1.1429; }
+#guided-tours #main .content ul.video-thumbs li a:hover { background-position:0 -182px; text-decoration:none; color:#08c;  }
+#guided-tours #main .content ul.video-thumbs li a:hover span.play { background: url(http://images.apple.com/ipad/guided-tours/images/video_play_hover_20110311.png); }
+#guided-tours #main .content ul.video-thumbs li a.active { background-position:0 -366px; text-decoration:none; }
+#guided-tours #main .content ul.video-thumbs li a.active span.play { display:none; }
+
+#guided-tours #main .content ul.selfclear { zoom:1; margin:0 -8px; padding-bottom:65px; }
+#guided-tours #main .content ul.selfclear:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+#guided-tours #main .content .headline-icon { display: table; height: 26px; *position:relative; line-height:1.1429em; }
+#guided-tours #main .content .headline-icon a:hover { text-decoration: none; }
+#guided-tours #main .content .headline-icon img { margin:2px 9px 0 0; position:relative; z-index:1; }
+#guided-tours #main .content .icon-div { *position:absolute; *top:50%; display: table-cell; vertical-align: middle; font-size:1.1429em; line-height:1.1429em; }
+#guided-tours #main .content .icon-div span { position:relative; top:-50%; }
+
+#guided-tours #main a#play-all { font-size:0.9286em; float:right; padding: 3px 32px 1px 32px; margin-top:10px; *margin-top:-33px; border-top:1px solid #ededed; border-bottom: 1px solid #fff; display: inline-block; display: -moz-inline-block; *display: inline; zoom: 1; background:#eee; background: -webkit-gradient( linear, 0 0, 0 100%, from(#fff), to(#ececec)); box-shadow: rgba(0,0,0,0.3) 0 1px 2px; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 2px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 2px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; -khtml-border-radius: 5px; *border: 1px solid #e0e0e0; *padding-bottom: 3px; }
+#guided-tours #main a#play-all:hover { text-decoration: none; background:#fafafa; background: -webkit-gradient( linear, 0 0, 0 100%, from(#fff), to(#e2e2e2)); background: -moz-linear-gradient(top, #fff), to(#e2e2e2)); }
+#guided-tours #main a#play-all:active { border-bottom: 1px solid #ececec; box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; -webkit-box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; -moz-box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; }
+#guided-tours #main a#play-all.play-all { color:#262626; background:#f4f4f4; background: -webkit-gradient( linear, 0 0, 0 100%, from(#c9c9c9), to(#f4f4f4)); background: -moz-linear-gradient(top, #c9c9c9), to(#f4f4f4)); border-bottom: 1px solid #ececec; box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; -webkit-box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; -moz-box-shadow:inset rgba(0,0,0,0.3) 0 1px 2px; }
+
+@media only screen and (max-device-width: 768px) {
+	#guided-tours #main .content .video-content .endState ul { left:160px; width:550px; padding-top:24%; }
+	#guided-tours #main a#play-all { display:none; } 
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>dd</title>
+		<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+	</head>
+	<body>
+		<div id="loading_box">
+			<img src="http://www.besteric.com/wp-content/themes/awake/styles/_shared/slider_loader.gif">
+		</div>
+		<div id="xx">
+			如果2.
+		</div>
+		<script type="text/javascript">
+			var url		= 'http://test.wt/html/20110614/php.php';
+			var today=new Date();
+			var time = today.getSeconds();
+			$.get(url, { date: time },
+  			function(data){
+  				$('#loading_box').hide();
+  				$('#xx').replaceWith(data);
+    		//alert("Data Loaded: " + data);
+  			});
+  			function f()
+			{
+				alert('xxx22');
+			}
+		
+			/* var loaded = false;
+			function startLoading()
+			{
+				loaded = false;
+				window.setTimeout('showLoadingImage()', 1000);
+			}
+			
+			function showLoadingImage()
+			{
+				if (!loaded)
+				{
+					$('#loading_box').show();
+				};
+			}
+			
+			function f()
+			{
+				alert('xxx22');
+			}
+			
+			function stopLoading(data)
+			{
+				Element.hide('loading_box');
+				loaded = true;
+				//$('loading_box').innerHTML(data.responseText);
+				$('xx').replace(data.responseText);
+				//new Insertion.Top('xx', data.responseText);
+				//alert(data.responseText);
+			}
+			var today=new Date();
+			var time = today.getSeconds();
+			var url		= 'http://test.wt/html/20110614/php.php';
+			var pars	= 'empID=' + time;
+			new Ajax.Request(
+				url,
+				{
+					method : 'get',
+					parameters : pars,
+					onCreate : showLoadingImage,
+					onComplete : stopLoading
+				}
+			);*/
+			
+		</script>
+	</body>
+</html>

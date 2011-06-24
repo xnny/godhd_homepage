@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+
+	<title>Apple - iPad - All-new design. Video calls. HD video. And more.</title>
+	<meta name="omni_page" content="iPad - Index" />
+	<meta name="Category" content="products,ipad" />
+	<meta name="Description" content="All-new thinner, lighter design. Faster A5 chip. FaceTime video calling. With the same 10-hour battery. It’s not a tablet, it’s iPad 2. Starts at $499.	" />
+	<script src="prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	<script src="event_mixins.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swap_view.js" type="text/javascript" charset="utf-8"></script>
+	<script src="view_master_tracker.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	if (typeof(tracker) == 'undefined')
+	{
+		tracker = false;
+	}
+
+	Event.onDOMReady(function() {
+		if (!tracker) {
+			tracker = new AC.ViewMaster.Tracker('click');
+		}
+	});
+	</script>
+	<script src="ac_media.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+	<link rel="stylesheet" href="base.css" type="text/css" />
+	<link rel="stylesheet" href="ipad.css" type="text/css" />
+	<link rel="stylesheet" href="home.css" type="text/css" />
+	<script type="text/javascript" src="promomanager.js"></script>
+	<script type="text/javascript" src="iscroll.js"></script>
+	<script type="text/javascript" src="ac_iscroll.js"></script>
+	<script src="single_click.js" type="text/javascript" charset="utf-8"></script>
+	<script src="configure_tracker.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Event.onDOMReady(function() {
+			// Choose a hero
+			var pmch = new AC.PromoManager('ipad20110302', 'hero-gallery-1');
+			if(AC.Detector.iOSVersion())
+			{
+				var heroGalleryView = new AC.ViewMaster.SlideViewer($$('a.hero-gallery-trigger'), 
+																		'hero-gallery', 
+																		'hero-gallery-trigger', 
+																		{ silentTriggers:true, useTouchEvents: true });
+			}
+			else
+			{
+				var heroGalleryView = new AC.ViewMaster.Viewer($$('a.hero-gallery-trigger'), 
+																	'hero-gallery', 
+																	'hero-gallery-trigger', 
+																	{ silentTriggers:true, useKeyboardNav: true });
+			}
+			heroGalleryView.setDelegate({
+				willShow: function (sender, outgoingView, incomingView)
+				{
+					// Stop slideShow on video playing
+					if(!!heroGalleryViewSlideShowTimeout)
+					{
+						window.clearTimeout(heroGalleryViewSlideShowTimeout);
+						delete heroGalleryViewSlideShowTimeout;
+					}
+					
+					if(typeof sender.currentTrigger() == "object")
+					{
+						if(heroGalleryViewSlideShow && heroGalleryViewSlideShow._active) { heroGalleryViewSlideShow.stop(); }
+					}
+				}
+			});
+			
+			var heroGalleryViewSlideShow;
+			var heroGalleryViewSlideShowTimeout = setTimeout(function(){
+				heroGalleryViewSlideShow = new AC.ViewMaster.Slideshow(
+					heroGalleryView, 
+					'hero-gallery-trigger', 
+					{ delay:5000, autoplay:true, stopOnContentTriggerClick:false });
+			}, 2000);
+			
+			/* iPad 2 Product video */
+			var directorylinks = $$('#directorynav a[href="/ipad/#video"]');
+			if(directorylinks.length > 0){
+				directorylinks[0].href = '#video';
+				directorylinks[0].addClassName('hero-video-trigger');
+			}
+
+			var ipad2Video = new AC.ViewMaster.Viewer($$('#video-incoming-hero .video-content'), 
+														'video-incoming-hero', 
+														'hero-video-trigger', 
+														{ silentTriggers:true, shouldAnimateContentChange:false, showFirstOnStopMovie:true });
+			ipad2Video.setDelegate(Object.extend(createDelegate($('video-wrapper-hero'), $('video-outgoing-hero')), {
+				willShow: function (sender, outgoingView, incomingView) {
+					// Stop slideShow on video playing
+					if(heroGalleryViewSlideShow && heroGalleryViewSlideShow._active) { heroGalleryViewSlideShow.stop(); }
+					else if(!!heroGalleryViewSlideShowTimeout){
+						window.clearTimeout(heroGalleryViewSlideShowTimeout);
+						delete heroGalleryViewSlideShowTimeout;
+					}
+				}
+			}));
+			ipad2Video.options.ensureInView = true;
+
+		});
+	</script>
+</head>
+<body id="overview">
+	<script type="text/javascript">
+	var searchSection = 'ipad';
+	var searchCountry = 'us';
+</script>
+<script src="globalnav.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	AC.GlobalNav.Instance = new AC.GlobalNav();
+</script>
+
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+	
+
+
+
+
+	
+
+
+<script type="text/javascript">
+/* RSID: */
+
+var s_account="appleglobal,appleusipad"
+
+</script>
+
+
+<script type="text/javascript" src="s_code_h.js"></script>
+
+
+
+<script type="text/javascript">
+
+s.pageName=AC.Tracking.pageName()+" (us)";
+s.channel="www.us.ipad"
+
+
+if(AC&&AC.Storage){
+	s.prop25=AC.Storage.getItem('s_ipad_nav');
+	AC.Storage.removeItem('s_ipad_nav')
+}
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+<!-- End SiteCatalyst code version: H.8. -->
+
+
+	<div id="main">
+		<header>
+			<div class="video-wrapper" id="video-wrapper-hero">
+		
+				<div class="video-outgoing" id="video-outgoing-hero">
+					<div id="hero-gallery">
+						<figure id="hero-gallery-1">
+							<div id="hero1" class="hero-gallery-1">
+								<h1><img src="http://images.apple.com/ipad/home/images/hero_title_20110308.png" alt="iPad 2" width="289" height="95" /></h1>
+								<h2><img src="http://images.apple.com/ipad/home/images/hero_subhead_20110311.png" alt="Thinner. Lighter. Faster. FaceTime. Smart Covers. 10-hour battery. Starting at $499." width="750" height="58" /></h2>
+							</div>
+							<div id="hero2" class="hero-gallery-1">
+								<h1><img src="http://images.apple.com/ipad/home/images/hero_title_20110308.png" alt="iPad 2" width="289" height="95" /></h1>
+								<h2><img src="http://images.apple.com/ipad/home/images/hero_subhead_20110311.png" alt="Thinner. Lighter. Faster. FaceTime. Smart Covers. 10-hour battery. Starting at $499." width="750" height="58" /></h2>
+							</div>
+						</figure>
+						<figure id="hero-gallery-2" class="hero-gallery-2"><a href="/ipad/features/">
+							<h1>All-new design</h1>
+							<h2>Less in your hands. More at your fingertips.</h2>
+						</a></figure>
+						<figure id="hero-gallery-3" class="hero-gallery-3"><a href="/ipad/features/">
+							<h1>A5 dual core chip</h1>
+							<h2>It’s fast, times two.</h2>
+						</a></figure>
+						<figure id="hero-gallery-4" class="hero-gallery-4"><a href="/ipad/built-in-apps/">
+							<h1>Two cameras</h1>
+							<h2>FaceTime, HD video, and lots more to smile about.</h2>
+						</a></figure>
+						<figure id="hero-gallery-5" class="hero-gallery-5"><a href="/ipad/smart-cover/">
+							<h1>iPad Smart Cover</h1>
+							<h2>One great idea on top of another.</h2>
+						</a></figure>
+					</div>
+					<ul class="simple-nav">
+						<li><a class="hero-gallery-trigger" href="#hero-gallery-1"></a></li>
+						<li><a class="hero-gallery-trigger" href="#hero-gallery-2"></a></li>
+						<li><a class="hero-gallery-trigger" href="#hero-gallery-3"></a></li>
+						<li><a class="hero-gallery-trigger" href="#hero-gallery-4"></a></li>
+						<li class="last-dot"><a class="hero-gallery-trigger" href="#hero-gallery-5"></a></li>
+					</ul>
+				</div>
+
+				
+		</header>
+<!--/content-->
+
+	</div><!--/main-->
+	<footer id="globalfooter">
+	</footer><!--/globalfooter-->
+</body>
+</html>

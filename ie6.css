@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.fadenav a, .fadenav a.current, .fadenav a:hover { background:none; }
+.fadenav a { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/top_game_action1.png'); }
+.fadenav a.current, .fadenav a:hover { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/top_game_action2.png'); }
+
+.game-explain .bg1 { background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/game.png'); }
+
+.footer_bg_2 { background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/footer_bg_2.png'); }
